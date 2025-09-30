@@ -1,16 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-<style>
-    @font-face {
-        font-family: msGothic;
-        src: url("fonts/MS Gothic.ttf");
-    }
-
-    * {
-        font-family: msGothic;
-    }
-</style>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,17 +8,45 @@
 	<title>about page</title>
     <link rel="icon" type="image/x-icon" href="images/decor/biggestsmile.png">
 </head>
-<body>
-	<div class="container">
+<body id>
+    <header>
         <h1>about me!</h1>
-        <p>hi, it's jacky. welcome to my cool site. you're currently reading the 'about' section. <br> check out my socials here:</p>
-        <a href="https://twitter.com/JackyChang64"><img title="twitter" src="images/buttons/twitter.png" alt="twitterIcon" style="width:70px;height:70px;"></a>
-        <a href="https://bsky.app/profile/jackychang.ca"><img title="bluesky" src="images/buttons/bluesky.png" alt="blueskyIcon" style="width:70px;height:70px;"></a>
-        <a href="https://www.reddit.com/r/hijackychang/"><img title="the official hijackychang reddit" src="images/buttons/reddit.png" alt="redditIcon" style="width:70px;height:70px;"></a>
-        <a href="https://www.youtube.com/@jackychangreal"><img title="my youtube?" src="images/buttons/youtube.png" alt="youtubeIcon" style="width:70px;height:70px;"></a>
-        <p>or, return to the main page by clicking on this little guy:</p>
-        <a href="./index.html"><img src="images/buttons/backButton.gif" alt="homepage" style="width:80px;height:84px;"></a>
+    </header>
+
+    <div id="parent">
+        <div>
+            <div class="header">
+                <img src="images/decor/biggestsmile.png" alt="logo"/>
+                <h2>jackychang.ca</h2>
+            </div>
+            <div class ="navBar">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./coolPage.html">cool page</a></li>
+                <li><a href="./paintGallery.html">paint gallery</a></li>
+                <li><a href="./characterPage.html">character page</a></li>
+                <li><a href="./blog.html">blog</a></li>
+            </div>
+        </div>
+    
+	    <div class="container" id="wide"> 
+            <div class="infoBox" id="normalBox">
+                <p>hi, it's jacky. welcome to my cool site. you're currently reading the 'about' section. check out my socials here:</p>
+                <div id="centered">
+                    <a href="https://twitter.com/JackyChang64"><img title="twitter" src="images/buttons/twitter.png" alt="twitterIcon" style="width:70px;height:70px;"></a>
+                    <a href="https://bsky.app/profile/jackychang.ca"><img title="bluesky" src="images/buttons/bluesky.png" alt="blueskyIcon" style="width:70px;height:70px;"></a>
+                    <a href="https://www.reddit.com/r/hijackychang/"><img title="the official hijackychang reddit" src="images/buttons/reddit.png" alt="redditIcon" style="width:70px;height:70px;"></a>
+                    <a href="https://www.youtube.com/@jackychangreal"><img title="my youtube?" src="images/buttons/youtube.png" alt="youtubeIcon" style="width:70px;height:70px;"></a>
+                </div>
+                <p>or, return to the main page by clicking on this little guy: </p>
+                <div id="centered">
+                    <a href="./index.html"><img src="images/buttons/backButton.gif" alt="homepage" style="width:80px;height:84px;"></a>
+                </div>
+                <p style="text-align: right"><sub><small>(i suppose you could also just use the <br>navbar to the left..)</small></sub></p>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
 

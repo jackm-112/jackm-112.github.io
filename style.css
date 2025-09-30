@@ -1,0 +1,125 @@
+/*general*/
+@font-face {
+        font-family: msGothic;
+        src: url("fonts/MS Gothic.ttf");
+    }
+
+body{
+    padding-top: 25px;
+    padding-right: 200px;
+    padding-left: 200px;
+    font-family: msGothic;
+}
+
+header{
+    text-align: center;
+}
+
+#centered{
+    text-align: center;
+}
+
+.dotted{
+    border-style: dotted;
+}
+
+.solidBorder{
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.container{
+    text-align: center;
+}
+
+.infoBox{
+    display: inline-block;
+    text-align: left;
+}
+
+#normalBox{
+    max-width: 550px;
+}
+
+#wideBox{
+    max-width: 900px;
+}
+
+/*flex testing*/
+#parent{
+    display: flex;
+}
+
+#wide{
+    flex: 0.85;
+}
+
+
+/*jackychang.ca header text + image*/
+.header img{
+    float: left;
+    width: 30px;
+    height: 30px
+}
+
+.header h2{
+    position: relative;
+}
+
+/*navbar*/
+.navBar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #ffffff;
+}
+
+li a {
+    display: block;
+    color: black;
+    padding: 8px 0px;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+li a:hover {
+    background-color: #555555;
+    color: white;
+}
+
+/*contentBar*/
+.contentBar{
+    list-style-type: none;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+/* paint gallery related*/
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flext-start;
+}
+
+div.gallery-item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 438px;
+}
+
+div.gallery-item:hover {
+    border: 1px solid #777;
+}
+
+div.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery-item div.desc {
+    padding: 15px;
+    text-align: center;
+}

@@ -2,33 +2,47 @@
 <html lang="en">
 <head>
 <style>
-    @font-face {
-        font-family: msGothic;
-        src: url("fonts/MS Gothic.ttf");
-    }
-
-    * {
-        font-family: msGothic;
-    }
+    h1{text-align: center;}
 </style>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-	<title>jackychang's homepage</title>
+    <link rel="stylesheet" href="./style.css">
+	<title>jackychang.ca home</title>
     <link rel="icon" type="image/x-icon" href="images/decor/biggestsmile.png">
 </head>
 <body>
 	<header>
 		<h1>welcome to jackychang.ca</h1>
 	</header>
-    <div class ="container">
-        <img src="images/decor/lineOfToros.gif" alt="a line of toros">
-        <a href="./about.html"><h2>learn more about me!</h2></a>
-        <a href="./coolPage.html"><h2>go to the COOL page!</h2></a>
-        <a href="./paintGallery.html"><h2>check out the paint gallery!</h2></a>
-        <img src="images/decor/lineOfToros.gif" alt="a line of toros"><br><br>
-        <img title="toro welcomes you!" src="images/decor/toroWelcome.gif" alt="toro welcomes you." style="width:150px;height:105px;">
+
+    <div id="parent">
+        <div>
+            <div class="header">
+                <img src="images/decor/biggestsmile.png" alt="logo"/>
+                <h2>jackychang.ca</h2>
+            </div>
+            <div class ="navBar">
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./about.html">about</a></li>
+                <li><a href="./coolPage.html">cool page</a></li>
+                <li><a href="./paintGallery.html">paint gallery</a></li>
+                <li><a href="./characterPage.html">character page</a></li>
+                <li><a href="./blog.html">blog</a></li>
+            </div>
+        </div>
+        <div class ="container" id="wide">
+            <img src="images/decor/lineOfToros.gif" alt="a line of toros">
+            <a href="./about.html"><h2>learn more about me!</h2></a>
+            <a href="./coolPage.html"><h2>go to the COOL page!</h2></a>
+            <a href="./paintGallery.html"><h2>check out the paint gallery!</h2></a>
+            <a href="./characterPage.html"><h2>visit the character page!</h2></a>
+            <a href="./blog.html"><h2>read my blog!</h2></a>
+            <img src="images/decor/lineOfToros.gif" alt="a line of toros"><br><br>
+            <img title="toro welcomes you!" src="images/decor/toroWelcome.gif" alt="toro welcomes you." style="width:150px;height:105px;">
+            <p><small>these links have become rather redundant, but i like them. <br>so they'll stay. for now...</small></p>
+        </div>
     </div>
+    
 </body>
 </html>
