@@ -28,6 +28,30 @@ header{
     padding: 30px;
 }
 
+.divider {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.divider::before{
+    flex: 0.10;
+    content: '';
+    padding: 2px;
+    background-color: black;
+    margin: 5px;
+}
+
+.divider::after{
+    flex: 1;
+    content: '';
+    padding: 2px;
+    background-color: black;
+    margin: 5px;
+}
+
+/*for storing text*/
+
 .container{
     text-align: center;
 }
@@ -39,10 +63,22 @@ header{
 
 #normalBox{
     max-width: 550px;
+    padding-bottom: 25px;
 }
 
 #wideBox{
     max-width: 900px;
+}
+
+/*for blog posts*/
+#blogPost{
+    max-width: 900px;
+    padding-bottom: 50px;
+}
+
+#date{
+    text-align: left;
+    font-size: small;
 }
 
 /*flex testing*/
