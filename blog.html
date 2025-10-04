@@ -4,28 +4,27 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="testStyle.css">
 	<title>blog</title>
     <link rel="icon" type="image/x-icon" href="images/decor/biggestsmile.png">
 </head>
 <body>
-    <header>
-        <h1>blog</h1>
-    </header>
-    <div id="parent">
-        <div>
+    <div class = "grid-container">
+        <div class = "item1"><h1>blog</h1></div>
+
+        <div class = "item2">
             <div class="header">
                 <img src="images/decor/biggestsmile.png" alt="logo"/>
                 <h2>jackychang.ca</h2>
             </div>
-            <div class ="navBar">
+            <ul>
                 <li><a href="./index.html">home</a></li>
                 <li><a href="./about.html">about</a></li>
                 <li><a href="./coolPage.html">cool page</a></li>
                 <li><a href="./paintGallery.html">paint gallery</a></li>
                 <li><a href="./characterPage.html">character page</a></li>
                 <li><a href="./blog.html">blog</a></li>
-            </div>
+            </ul>
             <div class = "sticky">
                 <p><strong>on this page:</strong></p>
                 <div class = "contentBar">
@@ -35,25 +34,28 @@
                 </div>
             </div>
         </div>
-        <div class="container" id="wide">
-            <div class="infoBox" id="normalBox">
+
+        <div class = "item3">
+            <div class = "item5" style="text-align: left; padding-bottom: 20px;">
                 <p>welcome to my blog. i'm just writing things down for fun. check back every so often for new posts!</p>
             </div>
             <h2 id="sept2025">sept 2025</h2>
             <a id="recentPost"></a>
-            <div class="infoBox" id="blogPost">
+            <div class="blogPost">
                 <div class="divider">00: making a website</div>
                 <p>the first (of likely many) blog posts! at the time of writing, the blog is still being implemented so i'm not sure when this'll go up.
                     making this website is a learning experience. <br> <br>for example, the way things work right now, the whole blog page format breaks depending
                     on the length of certain pieces of text. it's hard to describe properly. it's a miracle everything else (mostly) works lol
                 </p>
                 <p style="color:gray"><small>later...</small></p>
-                <p>i figured out what's making everything break. no clue how to fix it, though. basically, if a blog post doesn't have enough text to fill
+                <p>i figured out what's making everything break. no clue how to fix it though. basically, if a blog post doesn't have enough text to fill
                     its default width, (i.e. enough text so that it goes onto a second line) then it tries to cram two elements next to each other.</p>
                 <p id="date">sept 30th 2025</p>
             </div>
             <a id="firstPost"></a>
         </div>
+
+        <div class = "item4"></div>
     </div>
 </body>
 </html>

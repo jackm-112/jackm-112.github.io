@@ -1,6 +1,73 @@
 <!doctype html>
 <html lang="en">
 <head>
+<style>
+    *{
+        margin: 1;
+        box-sizing: border-box;
+    }
+
+    @font-face {
+        font-family: msGothic;
+        src: url("fonts/MS Gothic.ttf");
+    }
+
+    body{
+        font-family: msGothic;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-areas:
+            'header header header header header header header'
+            'menu . main main main . right'
+            'footer footer footer footer footer footer footer';
+        column-gap: 20px;
+        background-color: white;
+    }
+
+    .item1{
+        text-align: center;
+        grid-area: header;
+    }
+
+    .item2 {
+        grid-area: menu;
+    }
+
+    .item2 ul {
+        list-style-type: none;
+        padding: 0;
+        width: 200px;
+        background-color: #ffffff;
+    }
+
+    .item2 li a {
+        display: block;
+        color: black;
+        padding: 8px 0px;
+        text-decoration: none;
+        border-bottom: 1px dotted black;
+    }
+
+    .item2 li a:hover {
+        background-color: #555555;
+        color: white;
+    }
+
+    .item3 {
+        text-align: center;
+        padding-top: 20px;
+        grid-area: main;
+    }
+
+    .item4 {
+        min-width: 200px;
+        grid-area: right;
+    }
+
+
+</style>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +99,7 @@
             </div>
         </div>
 
-        <div class = "item3" style = "padding-top: 20px">
+        <div class = "item3">
             <img src="images/decor/lineOfToros.gif" alt="a line of toros">
             <a href="./about.html"><h2>learn more about me!</h2></a>
             <a href="./coolPage.html"><h2>go to the COOL page!</h2></a>

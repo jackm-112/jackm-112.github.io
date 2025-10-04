@@ -1,0 +1,170 @@
+/*general*/
+*{
+        margin: 1;
+        box-sizing: border-box;
+    }
+
+@font-face {
+        font-family: msGothic;
+        src: url("fonts/MS Gothic.ttf");
+    }
+    
+body{
+    font-family: msGothic;
+    padding-top: 25px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+/*grid design elements*/
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+        'header header header header header header header'
+        'menu . main main main . right'
+        'footer footer footer footer footer footer footer';
+    column-gap: 20px;
+    background-color: white;
+}
+
+.item1{
+    text-align: center;
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item2 ul {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    background-color: #ffffff;
+}
+
+.item2 li a {
+    display: block;
+    color: black;
+    padding: 8px 0px;
+    text-decoration: none;
+    border-bottom: 1px dotted black;
+}
+
+.item2 li a:hover {
+    background-color: #555555;
+    color: white;
+}
+
+.item3 {
+    text-align: center;
+    grid-area: main;
+}
+
+.item4 {
+    min-width: 200px;
+    grid-area: right;
+}
+
+.item5 {
+    padding-left: 22%;
+    padding-right: 22%;
+    grid-area: main;
+}
+
+.blogPost {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 50px;
+    text-align: left;
+    grid-area: main;
+}
+
+/*jackychang.ca header text + image*/
+header{
+    text-align: center;
+}
+
+.header img{
+    float: left;
+    width: 30px;
+    height: 30px
+}
+
+/*contentBar*/
+.contentBar{
+    list-style-type: none;
+    font-size: 13px;
+    padding: 0;
+    width: 150px;
+}
+
+/*to be reworked (the other stuff)*/
+
+#centered{
+    text-align: center;
+}
+
+.dotted{
+    border-style: dotted;
+}
+
+/* paint gallery related*/
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div.gallery-item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 460px; /*45%*/
+}
+
+div.gallery-item:hover {
+    border: 1px solid #777;
+}
+
+div.gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+div.gallery-item div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.sticky {
+    position: sticky;
+    top: 0;
+}
+
+#date{
+    text-align: left;
+    font-size: small;
+}
+
+.divider {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.divider::before{
+    flex: 0.10;
+    content: '';
+    padding: 2px;
+    background-color: black;
+    margin-right: 8px;
+}
+
+.divider::after{
+    flex: 1;
+    content: '';
+    padding: 2px;
+    background-color: black;
+    margin-left: 8px;
+}
