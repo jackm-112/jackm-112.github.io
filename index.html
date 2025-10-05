@@ -40,11 +40,52 @@
             <a href="./characterPage.html"><h2>visit the character page!</h2></a>
             <a href="./blog.html"><h2>read my blog!</h2></a>
             <img src="images/decor/lineOfToros.gif" alt="a line of toros"><br><br>
-            <img title="toro welcomes you!" src="images/decor/toroWelcome.gif" alt="toro welcomes you." style="width:150px;height:105px;">
+            <img class = "confettiLauncher" title="toro welcomes you!" src="images/decor/toroWelcome.gif" alt="toro welcomes you." style="width:150px;height:105px;">
             <p><small>these links have become rather redundant, but i like them. <br>so they'll stay. for now...</small></p>
         </div>
 
         <div class = "item4"></div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script>
+    const confettiLauncher = document.querySelector(".confettiLauncher")
+    confettiLauncher.addEventListener("click", () => {
+        confetti({
+            spread: 360,
+            ticks: 200,
+            gravity: 0,
+            decay: 0.94,
+            startVelocity: 30,
+            particleCount: 150,
+            scalar: 3,
+            origin: {y : 0.1},
+            shapes: ["image"],
+            shapeOptions: {
+                image: [{
+                    src: "images/decor/toroConfetti1.png",
+                    width: 32,
+                    height: 32,
+                },
+                {
+                    src: "images/decor/toroConfetti2.png",
+                    width: 32,
+                    height: 32,
+                },
+                {
+                    src: "images/decor/kuroConfetti1.png",
+                    width: 32,
+                    height: 32,
+                },
+                {
+                    src: "images/decor/kuroConfetti2.png",
+                    width: 32,
+                    height: 32,
+                },
+                ],
+            },
+        });
+    })
+    </script>
 </body>
 </html>
