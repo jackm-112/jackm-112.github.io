@@ -33,18 +33,18 @@ body{
     grid-area: header;
 }
 
-.item2 {
+.navbar {
     grid-area: menu;
 }
 
-.item2 ul {
+.navbar ul {
     list-style-type: none;
     padding: 0;
     width: 200px;
     background-color: #ffffff;
 }
 
-.item2 li a {
+.navbar li a {
     display: block;
     color: black;
     padding: 8px 0px;
@@ -52,7 +52,7 @@ body{
     border-bottom: 1px dotted black;
 }
 
-.item2 li a:hover {
+.navbar li a:hover {
     background-color: #555555;
     color: white;
 }
@@ -68,12 +68,14 @@ body{
 }
 
 .item5 {
+    min-width: 700px;
     padding-left: 22%;
     padding-right: 22%;
     grid-area: main;
 }
 
 .blogPost {
+    min-width: 550px;
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 50px;
@@ -101,7 +103,6 @@ header{
 }
 
 /*to be reworked (the other stuff)*/
-
 #centered{
     text-align: center;
 }
@@ -171,4 +172,166 @@ div.sticky {
 
 .confettiLauncher{
     cursor: pointer;
+}
+
+/*character cards*/
+.card {
+    width: 25%;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    margin: 5px;
+}
+
+.card:hover {
+    border: 1px solid #777;
+}
+
+.card p{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.content{
+    box-sizing: border-box;
+    flex: 1;
+    padding: 7px;
+}
+
+.hero-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/characters/cleftwithahat.png");
+    height: 50%;
+    max-height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-imageP{
+    background-image: url("images/characters/pitchwithoutahat.png");
+    height: 50%;
+    max-height: 240px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border: dotted black 1px;
+}
+
+.container {
+    border: 1px solid #777;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 125%;
+    text-align: left;
+    max-width: 500px;
+}
+
+.container.center{
+    max-height: 50px;
+}
+
+.container::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.container img {
+    float: left;
+    max-width: 100px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.container img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+    transform: scaleX(-1);
+}
+
+/*image containers*/
+.image-container {
+  border: 1px dotted black;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  aspect-ratio: 1/1;
+  position: relative;
+}
+
+.image-container.compare{
+    aspect-ratio: 2.4/1;
+    width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.row {
+  display: flex;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  transition: .1s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.restrictLol{
+    min-width: 700px;
+}
+
+/*collapsible*/
+details {
+  user-select: none;
+  margin-bottom: 10px;
+}
+
+details>summary span.icon {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
+
+details[open] summary span.icon {
+  transform: rotate(180deg);
+}
+
+summary {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border: 1px solid #777;
+}
+
+summary>h2{
+    margin-left: auto;
+}
+
+summary::-webkit-details-marker {
+  display: none;
 }
