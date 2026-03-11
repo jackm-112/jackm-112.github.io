@@ -1,0 +1,109 @@
+.parent{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 1em;
+  background-image: url("../Images/csheader.jpg");
+  background-position: center;
+  min-height: 125px;
+  margin-bottom: 1em;
+}
+
+.parent h1 {
+  color: rgb(185, 89, 211);
+  text-shadow: 2px 2px black;
+}
+
+.gParent {
+  background-color: darkred;
+}
+
+img {
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+
+img:hover {
+  transform: scale(1.15);
+  border-radius: 15px;
+}
+
+.gParent > .parent2 .box1:hover p{
+  background-color: red;
+  color: white;
+}
+
+#work:hover p{
+  background-color: black;
+  color: red;
+}
+
+#work:hover p::after{
+  content: " Go to Lorem Ipsum";
+  color: white;
+  font-style: italic;
+  font-size: x-small;
+}
+
+.parent1, .parent2, .parent3 {
+  display: grid;
+  margin: 5px;
+  text-align: justify;
+}
+
+.parent1 {
+    grid-template-columns: 3fr 1fr;
+}
+
+.parent1 .box1:first-child{
+    max-height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.parent1 .box1:last-child {
+  background-color: lightcoral;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+h1 {
+  text-align: center
+}
+
+.parent2 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.parent2 p {
+  margin: 1px 1px 1px 1px;
+  padding: 2px;
+}
+
+.parent2 .box1 {
+  background-color: lightcoral;
+  color: darkred;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  padding: 2.5px;
+}
+
+.parent3 {
+  grid-template-columns: 4fr;
+  text-align: center;
+}
+
+.parent3 .box1 {
+  background-color:gray
+}
+
+.box1 {
+  background-color: red;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  min-width: 0;
+}
